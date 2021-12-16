@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hideout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;family=Raleway:wght@100;200;400;500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Changa&family=Lato:wght@700&family=Signika:wght@700&display=swap" rel="stylesheet"> 
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>  
+</head>
+<!--body start-->
+<body>
+  <div class="topnav header" id="myTopnav"> 
+    <video autoplay muted loop id="myVideo" class="myvideo">
+      <source src="black3.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="logoo" style="float: left;">
+      <a href=""><img src="LOGO2.JPG"  width="80" alt=""></a>
+    </div>    
+    
+   
+    
+    <a href="#slider-nav-big">offers </a> 
+    <a href="#contact">Contact</a>
+    <a href="menu.html">Menu </a>
+    <a href="index.html" >Home </a> 
+    <div class="content2">
+      <div class="testing"><h1>score <br> this <br> week <br> deals.</h1>
+        <a href="menu.html" style="background: none;"><button> explore menu</button></a>
+      </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>      
+  </div>
+
+  <!--section start-->
+  <section class="section section-extended right dark dark-bg">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="feature feature-1 mb-md-0">
+            <div class="feature-icon icon icon-primary"><i class="fa fa-cart-plus"></i>
+            </div>
+            <div class="feature-content">
+              <h4 class="mb-2"><a href="menu-list-collapse.html">Pick a dish</a></h4>
+              <p class="text-muted mb-0">Choose your favourites dish from our menu.</p>
+            </div>
+          </div>
+        </div>
+      <div class="col-md-4">
+        <div class="feature feature-1 mb-md-0">
+          <div class="feature-icon icon icon-primary"><i class="fa fa-credit-card"></i>
+          </div>
+          <div class="feature-content">
+            <h4 class="mb-2"><a href="menu-list-collapse.html">Make a payment</a>
+            </h4>
+              <p class="text-muted mb-0">You can make Payment through Phone-pe, Gpay or any other apps</p>
+          </div>
+          </div> 
+        </div>
+        <div class="col-md-4">
+          <div class="feature feature-1 mb-md-0">
+            <div class="feature-icon icon icon-primary"><i class="fa fa-thumbs-up"></i></div>
+              <div class="feature-content">
+                <h4 class="mb-2"><a href="menu-list-collapse.html">Recieve your food!</a></h4>
+                <p class="text-muted mb-0">Recieve Your food and enjoy our delicious varieties.</p>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container ">
+      <div class="slider slider-nav row">
+        <div class="mini-slider " onclick="burgers('menu.html')">
+          <img class="image" src="burger.jpg" alt="burger" style="width:100%;">
+          <h3 class="centered">Burgers</h3>
+        </div> 
+        <div class="mini-slider">
+          <img class="image" src="shushiq.jpg" alt="Shushi" style="width:100%;">
+          <h3 class="centered">Shushi</h3>
+        </div> 
+        <div class="mini-slider" id="pizza" onclick="pizza('menu.html')">
+          <img class="image" src="pizza.jpg" alt="Pizza" style="width:100%;">
+          <h3 class="centered">Pizza</h3>
+        </div> 
+        <div class="mini-slider" id="pasta" onclick="pasta('menu.html')">
+          <img class="image" src="pasta.jpg" alt="pasta" style="width:100%;">
+          <h3 class="centered">Pasta</h3>
+        </div>
+        <div class="mini-slider" id="noodles" onclick="noodles('menu.html')">
+          <img class="image" src="noodles2.jpg" alt="noodles" style="width:100%;">
+          <h3 class="centered">Noodles</h3>
+        </div>
+        <div class="mini-slider" id="desserts" onclick="desserts('menu.html')">
+          <img class="image" src="desserts1.jpg" alt="desserts" style="width:100%;">
+          <div class="centered">Desserts</div>
+        </div> 
+      </div>
+    </div>
+      <div class="slider slider-nav-big  " id="slider-nav-big">
+        <div class="big-slider slider-nav2" >
+          <div class="container" >
+            <h2 class="offers" >Special Offers</h2>
+            <div class="offer2" >
+              <img class="image-bg" src="5bigslider.jpeg" >
+              <div class="special-offer" >
+                <div class="special-contemt-sub" >
+                  <h2>Free Small Pizza</h2>
+                  <h5> Get free burger from orders higher that ₹500!</h5>
+                  <ul class="list-check text-lg mb-0">
+                    <li> <i class="fa fa-check "></i>on Tuesdays</li>
+                    <li><i class="fa fa-check "></i>Order higher that $40</li>
+                    <li><i class="fa fa-check "></i>Unless one burger ordered</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="container" >
+            <h2 class="offers" >Special Offers</h2>
+              <div class="offer2" >
+                <img class="image-bg" src="5bigslider.jpeg" >
+                <div class="special-offer" >
+                  <div class="special-contemt-sub" >
+                    <h2>Free Small Pizza</h2>
+                    <h5> Get free burger from orders higher that ₹500!</h5>
+                    <ul class="list-check text-lg mb-0">
+                      <li> <i class="fa fa-check "></i>on Tuesdays</li>
+                      <li><i class="fa fa-check "></i>Order higher that $40</li>
+                      <li><i class="fa fa-check "></i>Unless one burger ordered</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="bg-image bg-fixed" >
+          <div class="container">
+            <div class="row">
+              <div class=" diss">
+                <h1 class="dis-banner">We Do<strong>The Best Burgers</strong> in town</h1>
+                <h4 class="dis-banner-small">Taste it now with our online order!</h4>
+                <button>ORDER NOW</button>
+                <br><br><br><br><br><br><br>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <section id="contact" style="background: black;">
+  
+          <h1 class="section-header">Contact</h1>
+          
+          <div class="contact-wrapper">
+          
+          <!-- Left contact page --> 
+            
+            <form id="contact-form" class="form-horizontal" role="form">
+               
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                </div>
+              </div>
+        
+              <div class="form-group">
+                <div class="col-sm-12">
+                  
+                  <br>
+                  <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                </div>
+              </div>
+        
+              <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+              
+              <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND" style="width: 200px;">
+                SEND
+              
+              </button>
+              
+            </form>
+            
+          <!-- Left contact page --> 
+            
+              <div class="direct-contact-container">
+        
+                <ul class="contact-list">
+                  <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Limdi, Gujarat</span></i></li>
+                  
+                  <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:5624256632" title="Give me a call">+91 5624256632</a></span></i></li>
+                  
+                  <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">nandanimodhiya@gmail.com</a></span></i></li>
+                  
+                </ul>
+        
+                <hr>
+                <ul class="social-media-list">
+                  <li><a href="www.facebook.com" class="conact-icon"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="www.instagram.com" class="conact-icon"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://github.com" class="conact-icon"><i class="fa fa-github"></i></a></li>
+                  <li><a href="https://in.linkedin.com" class="conact-icon"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="www.youtube.com" class="conact-icon"><i class="fa fa-youtube"></i></a></li>
+                  </li>       
+                </ul>
+                <hr>
+        
+               
+        
+              </div>
+            
+          </div>
+          
+        </section>  
+          
+          
+        <footer>
+        <section class="ft-legal">
+          <ul class="ft-legal-list">
+
+            <li>&copy; 2021 by nandani modhiya</li>
+          </ul>
+        </section>
+        </footer>
+  
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+
+</html>

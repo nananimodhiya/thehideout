@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<div class="s-layout">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Changa&family=Lato:wght@700&family=Signika:wght@700&display=swap" rel="stylesheet"> 
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;family=Raleway:wght@100;200;400;500&amp;display=swap" rel="stylesheet">
+
+        
+        <!-- Content -->
+</head>
+<style>
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    /* padding: 0; */
+    padding-top: 25px;
+    width: 25%;
+    background-color: #000;
+    position: absolute;
+    height: 300px;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color:white;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+    font-family: Helvetica Neue,Raleway,sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px  !important;
+}
+
+.column {
+  
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.main-cat{
+    position: relative;
+    margin-bottom: 100px;
+}
+.main-cat h1{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-family: Helvetica Neue,Raleway,sans-serif;
+    font-weight: 200 !important;
+    font-size: 48px;
+    margin-left: 10%;
+}
+.main-cat img{
+    width: 100%;height: 200px;
+}
+h6{
+    color: #383c40;
+    font-family: Helvetica Neue,Raleway,sans-serif;
+    font-weight:500;
+    font-size:  18px;
+    color: #383c40;
+    margin-bottom: 0px;    
+}
+.short_dec{
+    color:#a4a7a9 !important;
+}
+.price-tag{
+    font-family: Helvetica Neue,Raleway,sans-serif;
+    padding-top:10px;
+    font-weight:600; 
+    left: 0;
+    display: inline-block;
+    font-size: 12px;
+}
+.add-to-cart{
+    float:right;   
+    padding: 5px;
+    cursor: pointer;
+    color: black;
+    border: 2px solid black;
+    outline: none;
+    font-size: 14px;
+    font-family: Oswald,sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: transparent;
+}
+</style>
+<body>
+    <div class="topnav header" id="myTopnav" style="height:10vh;"> 
+        <div class="logoo" style="float: left;">
+          <a href=""><img src="LOGO2.JPG"  width="80" alt=""></a>
+        </div>    
+        <a href="index.html" >Home </a>
+        <a href="#">Menu </a>
+        <a href="">Contact</a>
+        <a href="#">About </a>  
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>      
+      </div>
+    <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="#burgers">Burgers</a></li>
+        <li><a href="#pizza">Pizza</a></li>
+        <li><a href="#desserts">desserts</a></li>
+    </ul>  
+    <div style="margin-left:25%;height:1000px;">
+        <div class="main-cat" id="Desserts" ><h1>Desserts</h1>
+            <img src="112345.jpg" alt="" >
+            <div class="row" >                 
+                <div class="column">
+                    <div>
+                        <img src="1.jpg" style="width:100%">
+                        <h6 >DIY pudding pops</h6>
+                    <span  class="short_dec">chocklate, milk, nuts</span> 
+                        <div>
+                            <span  class="price-tag">From ₹199</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="157394.jpg" style="width:100%">
+                        <h6 >Oreo</h6>
+                    <span  class="short_dec">Oreo, sweet, ice cream</span> 
+                        <div>
+                            <span  class="price-tag">From ₹149</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="desserts.jpg" style="width:100%">
+                        <h6 >black forest</h6>
+                    <span  class="short_dec">dark Chocklate, smoothy, tastey</span> 
+                        <div>
+                            <span  class="price-tag">From ₹149</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images (1).jpg" style="width:100%">
+                        <h6 >Mango</h6>
+                    <span  class="short_dec">white chocklate, Mango, sweet cream</span> 
+                        <div>
+                            <span  class="price-tag">From ₹199</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    
+                </div>  
+                <div class="column">
+                    <div>
+                        <img src="Best-Dessert-Places-in-Toronto2-681x426.jpg" style="width:100%">
+                        <h6 >chocklatey berry</h6>
+                    <span  class="short_dec">Berry, ice cream, chocklate</span> 
+                        <div>
+                            <span  class="price-tag">From ₹149</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="Desserts (1).jpg" style="width:100%">
+                        <h6 >vanilla</h6>
+                    <span  class="short_dec">Milk, Vanilla, ice cream</span> 
+                        <div>
+                            <span  class="price-tag">From ₹109</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="download (2).jpg" style="width:100%">
+                        <h6 >chocklaty browny</h6>
+                    <span  class="short_dec">browny bread, dark& white chocklate</span> 
+                        <div>
+                            <span  class="price-tag">From ₹109</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>                    <div>
+                        <img src="12345.jpg" style="width:100%">
+                        <h6 >cup cake</h6>
+                    <span  class="short_dec">cup cake</span> 
+                        <div>
+                            <span  class="price-tag">From ₹99</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-cat" id="pizza" ><h1>pizza</h1>
+            <img src="burger-cat.jpg" alt="" >
+            <div class="row" >                 
+                <div class="column">
+                    <div>
+                        <img src="pizzza1.jpg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹250</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="pizza2.jpeg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹250</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="pasta.jpg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹550</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="shushi.jpg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹250</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    
+                </div>  
+                <div class="column">
+                    <div>
+                        <img src="pizzza1.jpg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹250</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="pizzza1.jpg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹250</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="pizzza1.jpg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹250</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>                    <div>
+                        <img src="pizzza1.jpg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹250</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-cat" id="burgers" ><h1>Burger</h1>
+            <img src="burger-cat.jpg" alt="" >
+            <div class="row" >                 
+                <div class="column">
+                    <div>
+                        <img src="pizzza1.jpg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹250</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="pizza2.jpeg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹250</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="pasta.jpg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹550</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="shushi.jpg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹250</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    
+                </div>  
+                <div class="column">
+                    <div>
+                        <img src="pizzza1.jpg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹250</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="pizzza1.jpg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹250</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        <img src="pizzza1.jpg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹250</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>                    <div>
+                        <img src="pizzza1.jpg" style="width:100%">
+                        <h6 >Pizza</h6>
+                    <span  class="short_dec">cheese, potato, onion</span> 
+                        <div>
+                            <span  class="price-tag">From ₹250</span>
+                            <button  class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script>
+      
+ 
+    </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
